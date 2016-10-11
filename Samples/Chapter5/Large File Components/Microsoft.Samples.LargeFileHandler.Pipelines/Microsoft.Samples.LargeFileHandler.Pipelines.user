@@ -1,0 +1,35 @@
+﻿<VisualStudioProject>
+    <BIZTALK>
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon ReferencesPath = "C:\WINDOWS\assembly\GAC_MSIL\TR3.PipelineComponents\1.0.0.0__534385174f1af587\;C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\Projects\TR3.PipelineComponents\BizTalk Server Project1\obj\Deployment\" />
+                <Config
+                    Name = "Development"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "True"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "METOLY-PERS"
+                />
+                <Config
+                    Name = "Deployment"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "True"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "(LOCAL)"
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+        <Files/>
+    </BIZTALK>
+</VisualStudioProject>
+

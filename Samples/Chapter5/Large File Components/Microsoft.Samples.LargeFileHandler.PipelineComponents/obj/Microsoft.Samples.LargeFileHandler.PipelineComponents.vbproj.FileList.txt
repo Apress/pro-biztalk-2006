@@ -1,0 +1,10 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Microsoft.Samples.LargeFileHandler.PipelinesComponents.DemoDecodingComponent.resources
+obj\Debug\Microsoft.Samples.LargeFileHandler.PipelinesComponents.DemoEncodingComponent.resources
+obj\Debug\Microsoft.Samples.LargeFileHandler.PipelineComponents.vbproj.GenerateResource.Cache
+C:\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\Microsoft.Samples.LargeFileHandler.PipelinesComponents.dll
+C:\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\Microsoft.Samples.LargeFileHandler.PipelinesComponents.pdb
+C:\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\TR3.PipelineComponents.xml
+obj\Debug\Microsoft.Samples.LargeFileHandler.PipelinesComponents.dll
+obj\Debug\TR3.PipelineComponents.xml
+obj\Debug\Microsoft.Samples.LargeFileHandler.PipelinesComponents.pdb

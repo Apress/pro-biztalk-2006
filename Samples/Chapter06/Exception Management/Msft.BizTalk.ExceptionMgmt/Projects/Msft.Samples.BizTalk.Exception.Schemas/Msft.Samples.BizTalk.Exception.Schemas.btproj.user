@@ -1,0 +1,66 @@
+﻿<VisualStudioProject>
+    <BIZTALK>
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon ReferencesPath = "" />
+                <Config
+                    Name = "Development"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "True"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "BTS2006-CSD"
+                />
+                <Config
+                    Name = "Deployment"
+                    RestartHostInstances = "False"
+                    Register = "True"
+                    Redeploy = "True"
+                    ConfigurationDatabase = "BizTalkMgmtDb"
+                    Server = "."
+                />
+            </Settings>
+        </Build>
+        <OtherProjectSettings
+            CopyProjectDestinationFolder = ""
+            CopyProjectUncPath = ""
+            CopyProjectOption = "0"
+            ProjectView = "ProjectFiles"
+            ProjectTrust = "0"
+        />
+        <Files>
+            <File
+                RelPath = "FaultMessage.xsd"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "0"
+                EditorOutputInstanceFilename = "C:\Projects\Demos\FaultHandler\Msft.BizTalk.ExceptionMgmt\Samples\Test\FaultMessage.xml"
+                TestMapInputInstanceFilename = ""
+                EditorInputInstanceFilename = ""
+            />
+            <File
+                RelPath = "System-Properties.xsd"
+                AutoRefreshSchema = "0"
+                ValidateTestMapOutput = "True"
+                TestMapOutputInstanceFilename = ""
+                TestMapTargetType = "0"
+                ValidateTestMapInput = "True"
+                PropertySchemaFileName = "PropertySchema.xsd"
+                ValidateInstanceInputType = "0"
+                GenerateInstanceOutputType = "0"
+                TestMapSourceType = "0"
+                EditorOutputInstanceFilename = ""
+                TestMapInputInstanceFilename = ""
+                EditorInputInstanceFilename = ""
+            />
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

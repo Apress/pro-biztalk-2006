@@ -1,0 +1,195 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="a40df819-3ffe-4b8e-b8f1-3681e45dd7ca" LowerBound="1.1" HigherBound="42.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="DeploymentSampleApplication" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="37b55a8b-c942-42b4-aa7e-7cb3b869b075" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveGreetingsPortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="35290c6f-371a-493b-8082-17bc83475348" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvGreetingsOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="d9ee72d1-d23d-4afd-985c-4ae1a7fbc803" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.28">
+                    <om:Property Name="Ref" Value="DeploymentSampleApplication.GreetingsSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="9aefeaad-bf00-460c-a138-a7fdc09d7cde" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="SendGreetingsResponsePortType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="421a4fac-b209-42f2-84c4-5d9dabf25db2" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendGreetingsResponseOperation" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="6f0d51ee-f2a9-4266-a8dc-0807bd3a0f01" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.36">
+                    <om:Property Name="Ref" Value="DeploymentSampleApplication.GreetingsResponseSchema" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="f3eed6c8-baf3-4489-b92a-22509dc0d24e" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="41.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ProcessGreetingsOrchestration" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="ServiceBody" OID="9384ecff-3922-4f09-971a-bf53a2e3fc89" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="6df23575-3958-455e-8c01-4887d78d3bb9" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="31.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="ReceiveGreetingsPort" />
+                    <om:Property Name="MessageName" Value="GreetingsMsg" />
+                    <om:Property Name="OperationName" Value="RcvGreetingsOperation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Rcv Greetings" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="9481cdef-35eb-4f15-bfad-f0f322586dcb" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="37.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_GreetingsResponse" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Transform" OID="d2504f0f-cb6c-489b-9792-b97220442f17" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="36.1">
+                        <om:Property Name="ClassName" Value="DeploymentSampleApplication.GreetingsToGreetingsResponseMap" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_GreetingsToGreeetingsResponse" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessagePartRef" OID="33c2b083-4a8d-4d13-9a64-7d4a295df2c6" ParentLink="Transform_InputMessagePartRef" LowerBound="35.113" HigherBound="35.125">
+                            <om:Property Name="MessageRef" Value="GreetingsMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="0f0fab43-bbfc-47c3-bf92-e3057d07dbd8" ParentLink="Transform_OutputMessagePartRef" LowerBound="35.28" HigherBound="35.48">
+                            <om:Property Name="MessageRef" Value="GreetingsResponseMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="a688f672-8a43-4659-aba9-515e9d84361c" ParentLink="Construct_MessageRef" LowerBound="32.23" HigherBound="32.43">
+                        <om:Property Name="Ref" Value="GreetingsResponseMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="1944e460-8b7c-4d30-86e7-bf6a33c435b1" ParentLink="ServiceBody_Statement" LowerBound="37.1" HigherBound="39.1">
+                    <om:Property Name="PortName" Value="SendGreetingsResponsePort" />
+                    <om:Property Name="MessageName" Value="GreetingsResponseMsg" />
+                    <om:Property Name="OperationName" Value="SendGreetingsResponseOperation" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Snd Greetings" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0d17c6cb-f6c9-439b-8366-f2e9fb18ccac" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DeploymentSampleApplication.ReceiveGreetingsPortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ReceiveGreetingsPort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="cd4791ac-cbe8-4f70-9d0c-45baaf9d1478" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="91940d8b-883e-4b20-9f74-11861a21c0a8" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="17" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="DeploymentSampleApplication.SendGreetingsResponsePortType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendGreetingsResponsePort" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="8de39679-3942-49da-a196-63b96a71c2ba" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="760cf65a-8aba-4019-828e-785687e244c6" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="DeploymentSampleApplication.GreetingsSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GreetingsMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="f7ea0084-5bf1-46c5-b175-d350538368ad" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="DeploymentSampleApplication.GreetingsResponseSchema" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="GreetingsResponseMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module DeploymentSampleApplication
+{
+    internal porttype ReceiveGreetingsPortType
+    {
+        oneway RcvGreetingsOperation
+        {
+            GreetingsSchema
+        };
+    };
+    internal porttype SendGreetingsResponsePortType
+    {
+        oneway SendGreetingsResponseOperation
+        {
+            GreetingsResponseSchema
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service ProcessGreetingsOrchestration
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveGreetingsPortType ReceiveGreetingsPort;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses SendGreetingsResponsePortType SendGreetingsResponsePort;
+        message GreetingsSchema GreetingsMsg;
+        message GreetingsResponseSchema GreetingsResponseMsg;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("6df23575-3958-455e-8c01-4887d78d3bb9")]
+            activate receive (ReceiveGreetingsPort.RcvGreetingsOperation, GreetingsMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("9481cdef-35eb-4f15-bfad-f0f322586dcb")]
+            construct GreetingsResponseMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("d2504f0f-cb6c-489b-9792-b97220442f17")]
+                transform (GreetingsResponseMsg) = DeploymentSampleApplication.GreetingsToGreetingsResponseMap (GreetingsMsg);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("1944e460-8b7c-4d30-86e7-bf6a33c435b1")]
+            send (SendGreetingsResponsePort.SendGreetingsResponseOperation, GreetingsResponseMsg);
+        }
+    }
+}
+

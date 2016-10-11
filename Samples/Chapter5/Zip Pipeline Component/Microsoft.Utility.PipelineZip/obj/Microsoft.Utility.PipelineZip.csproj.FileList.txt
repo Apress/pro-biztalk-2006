@@ -1,0 +1,11 @@
+..\..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.Utility.PipelineZip.dll
+..\..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.Utility.PipelineZip.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Microsoft.Utility.PipelineZip.PipelineZip.resources
+obj\Debug\Microsoft.Utility.PipelineZip.ZipDecodeComponent.resources
+obj\Debug\Microsoft.Utility.PipelineZip.ZipEncodeComponent.resources
+obj\Debug\Microsoft.Utility.PipelineZip.csproj.GenerateResource.Cache
+obj\Debug\Microsoft.Utility.PipelineZip.dll
+obj\Debug\Microsoft.Utility.PipelineZip.pdb
+C:\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\Microsoft.Utility.PipelineZip.dll
+C:\Program Files\Microsoft BizTalk Server 2006\Pipeline Components\Microsoft.Utility.PipelineZip.pdb

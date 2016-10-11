@@ -1,0 +1,364 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="22493a9e-384a-440c-b5f9-d33c4d992f7b" LowerBound="1.1" HigherBound="98.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="BootCamp.Orchestration.Exception.Process" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="a409c689-870d-4677-b1bd-2945dc271ac4" ParentLink="Module_PortType" LowerBound="16.1" HigherBound="23.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="ReceiveReqType" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="afc91a41-3d3d-45cf-93f8-97df464a1a1b" ParentLink="PortType_OperationDeclaration" LowerBound="18.1" HigherBound="22.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SubmitRequest" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="0f50118a-3a8d-409f-8646-08cba84376b9" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="20.13" HigherBound="20.28">
+                    <om:Property Name="Ref" Value="BootCamp.Orchestration.Exception.Process.RequestApproved" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="8fc93fe2-db93-42be-a25d-ef6c417b4c1b" ParentLink="Module_PortType" LowerBound="23.1" HigherBound="30.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FaultPostType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="OperationDeclaration" OID="a7a302ab-903f-49e9-9339-4ff0d8110631" ParentLink="PortType_OperationDeclaration" LowerBound="25.1" HigherBound="29.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PostFaultMsg" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="MessageRef" OID="926b0078-ffc8-4ca3-a96a-de4282c73f3a" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="27.13" HigherBound="27.29">
+                    <om:Property Name="Ref" Value="BootCamp.Orchestration.Exception.Process.FaultMessageType" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="ecf54e69-d9fe-4de9-8add-da562cfa29f3" ParentLink="Module_ServiceDeclaration" LowerBound="30.1" HigherBound="97.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="EAIProcess" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="VariableDeclaration" OID="86c09b7b-ff77-4529-800b-54e745bd9f49" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="40.1" HigherBound="41.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="x" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="0eafc1f1-b531-45fe-988e-c4fdaac1231e" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="41.1" HigherBound="42.1">
+                <om:Property Name="InitialValue" Value="1" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="y" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="VariableDeclaration" OID="9c3432ac-0326-444f-93f9-143d67f5ea13" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="42.1" HigherBound="43.1">
+                <om:Property Name="InitialValue" Value="0" />
+                <om:Property Name="UseDefaultConstructor" Value="False" />
+                <om:Property Name="Type" Value="System.Int32" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="z" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="8ebe4341-422f-42b6-8558-1704c3c9c753" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="37.1" HigherBound="38.1">
+                <om:Property Name="Type" Value="BootCamp.Orchestration.Exception.Process.RequestApproved" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ApprovedRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="36297e47-31ef-4d24-9e22-aa682969566f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="38.1" HigherBound="39.1">
+                <om:Property Name="Type" Value="BootCamp.Orchestration.Exception.Process.RequestDeclined" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="DeniedRequest" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="968bb14e-4662-4c2c-8344-a2c1a489323a" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="39.1" HigherBound="40.1">
+                <om:Property Name="Type" Value="BootCamp.Orchestration.Exception.Process.FaultMessageType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="ServiceBody" OID="f6280d37-81b8-439b-96ad-3ba4e9a2c89a" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="4183e8f8-9361-4319-a4f5-09e5f41656ed" ParentLink="ServiceBody_Statement" LowerBound="45.1" HigherBound="50.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="RequestPort" />
+                    <om:Property Name="MessageName" Value="ApprovedRequest" />
+                    <om:Property Name="OperationName" Value="SubmitRequest" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive Request" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Scope" OID="83127ce0-b6eb-41b5-a151-0dd80f8a1eeb" ParentLink="ServiceBody_Statement" LowerBound="50.1" HigherBound="95.1">
+                    <om:Property Name="InitializedTransactionType" Value="True" />
+                    <om:Property Name="IsSynchronized" Value="False" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Execution Scope" />
+                    <om:Property Name="Signal" Value="True" />
+                    <om:Element Type="Construct" OID="f69f177a-b7fe-4332-9fec-437f64562250" ParentLink="ComplexStatement_Statement" LowerBound="55.1" HigherBound="61.1">
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Build Denied Message" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="MessageRef" OID="b46395f7-10d0-45f0-be1f-6843cea628d4" ParentLink="Construct_MessageRef" LowerBound="56.31" HigherBound="56.44">
+                            <om:Property Name="Ref" Value="DeniedRequest" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="Transform" OID="e6b25373-fd22-4fab-b6e5-d14ed112c58b" ParentLink="ComplexStatement_Statement" LowerBound="58.1" HigherBound="60.1">
+                            <om:Property Name="ClassName" Value="BootCamp.Orchestration.Exception.Schemas.MapToReqDenied" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Set Denied Request Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessagePartRef" OID="1ed05a02-7231-4bd1-ac88-e32041d16891" ParentLink="Transform_InputMessagePartRef" LowerBound="59.115" HigherBound="59.135">
+                                <om:Property Name="MessageRef" Value="ApprovedRequest" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_1" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                            <om:Element Type="MessagePartRef" OID="5ddf9e1c-ed55-4558-9263-c78dba9e1dc5" ParentLink="Transform_OutputMessagePartRef" LowerBound="59.36" HigherBound="59.54">
+                                <om:Property Name="MessageRef" Value="DeniedRequest" />
+                                <om:Property Name="PartRef" Value="Body" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Name" Value="MessagePartReference_2" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="VariableAssignment" OID="8e2041d4-7dca-4c04-a1ae-70d8e145eaf4" ParentLink="ComplexStatement_Statement" LowerBound="61.1" HigherBound="64.1">
+                        <om:Property Name="Expression" Value="// Generate a Divide By Zero Error&#xD;&#xA;x = y/z;" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Generate Error" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                    <om:Element Type="Catch" OID="e280636b-1992-4206-ba53-04b9ec1fdf9c" ParentLink="Scope_Catch" LowerBound="67.1" HigherBound="93.1">
+                        <om:Property Name="ExceptionName" Value="sysExc" />
+                        <om:Property Name="ExceptionType" Value="System.Exception" />
+                        <om:Property Name="IsFaultMessage" Value="False" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Catch All Exceptions" />
+                        <om:Property Name="Signal" Value="True" />
+                        <om:Element Type="Construct" OID="7de7d650-8d15-4da1-a31d-a25dee88a251" ParentLink="Catch_Statement" LowerBound="70.1" HigherBound="90.1">
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Build Fault Msg" />
+                            <om:Property Name="Signal" Value="True" />
+                            <om:Element Type="MessageAssignment" OID="0c38cf5f-a01a-4b57-b931-fcd1c6f6fe60" ParentLink="ComplexStatement_Statement" LowerBound="73.1" HigherBound="89.1">
+                                <om:Property Name="Expression" Value="// Create Fault Exception Message&#xD;&#xA;FaultMsg.Body = Msft.Samples.BizTalk.Exception.ExceptionMgmt.CreateFaultMessage();&#xD;&#xA;&#xD;&#xA;// Set Fault Message Properties&#xD;&#xA;FaultMsg.Body.Application = &quot;Some Application&quot;;&#xD;&#xA;FaultMsg.Body.FailureCategory = &quot;Sample&quot;;&#xD;&#xA;FaultMsg.Body.FaultCode = &quot;new fault&quot;;&#xD;&#xA;FaultMsg.Body.FaultDescription = &quot;Some Application Description&quot;;&#xD;&#xA;FaultMsg.Body.FaultSeverity = Msft.Samples.BizTalk.Exception.FaultSeverity.Severe;&#xD;&#xA;FaultMsg.Body.Scope = &quot;Execution Scope&quot;;&#xD;&#xA;&#xD;&#xA;// Add each message to the Fault Message&#xD;&#xA;Msft.Samples.BizTalk.Exception.ExceptionMgmt.AddMessage(FaultMsg,ApprovedRequest);&#xD;&#xA;Msft.Samples.BizTalk.Exception.ExceptionMgmt.AddMessage(FaultMsg,DeniedRequest);&#xD;&#xA;Msft.Samples.BizTalk.Exception.ExceptionMgmt.SetException(FaultMsg,sysExc);" />
+                                <om:Property Name="ReportToAnalyst" Value="False" />
+                                <om:Property Name="Name" Value="Set Fault Msg" />
+                                <om:Property Name="Signal" Value="True" />
+                            </om:Element>
+                            <om:Element Type="MessageRef" OID="456840af-7999-440e-80c4-f177cd7431bf" ParentLink="Construct_MessageRef" LowerBound="71.35" HigherBound="71.43">
+                                <om:Property Name="Ref" Value="FaultMsg" />
+                                <om:Property Name="ReportToAnalyst" Value="True" />
+                                <om:Property Name="Signal" Value="False" />
+                            </om:Element>
+                        </om:Element>
+                        <om:Element Type="Send" OID="9fd50b3f-9c63-4b11-b21c-e6d22583cec4" ParentLink="Catch_Statement" LowerBound="90.1" HigherBound="92.1">
+                            <om:Property Name="PortName" Value="FaultPost" />
+                            <om:Property Name="MessageName" Value="FaultMsg" />
+                            <om:Property Name="OperationName" Value="PostFaultMsg" />
+                            <om:Property Name="OperationMessageName" Value="Request" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="Send Fault" />
+                            <om:Property Name="Signal" Value="True" />
+                        </om:Element>
+                    </om:Element>
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="e6f6211a-4828-4052-98b6-89a9bdfe6fea" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="33.1" HigherBound="35.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="4" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BootCamp.Orchestration.Exception.Process.ReceiveReqType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RequestPort" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="LogicalBindingAttribute" OID="00b987f6-1505-4b2f-89ff-c474b08b2287" ParentLink="PortDeclaration_CLRAttribute" LowerBound="33.1" HigherBound="34.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="0be2e892-f74e-4ff0-ba69-1478f2ada6b4" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="35.1" HigherBound="37.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="38" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="BootCamp.Orchestration.Exception.Process.FaultPostType" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="FaultPost" />
+                <om:Property Name="Signal" Value="True" />
+                <om:Element Type="DirectBindingAttribute" OID="afdc0f5e-7594-4cf3-a934-4129d4788130" ParentLink="PortDeclaration_CLRAttribute" LowerBound="35.1" HigherBound="36.1">
+                    <om:Property Name="DirectBindingType" Value="MessageBox" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="6f525ec2-3464-4bf3-8a60-ae2aa833f609" ParentLink="Module_MessageType" LowerBound="4.1" HigherBound="8.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RequestApproved" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="6cb4496f-8143-4839-8a3d-b861de85b807" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="6.1" HigherBound="7.1">
+                <om:Property Name="ClassName" Value="BootCamp.Orchestration.Exception.Schemas.Request" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="f50e13f4-e8c6-47f4-92fb-73bb64d0eb61" ParentLink="Module_MessageType" LowerBound="8.1" HigherBound="12.1">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="RequestDeclined" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="8c467056-4eca-4cec-ae4f-3b9d2c762ac8" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="10.1" HigherBound="11.1">
+                <om:Property Name="ClassName" Value="BootCamp.Orchestration.Exception.Schemas.RequestDenied" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="057be7eb-a877-4c00-b5cd-771a2831b193" ParentLink="Module_MessageType" LowerBound="12.1" HigherBound="16.1">
+            <om:Property Name="TypeModifier" Value="Public" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="FaultMessageType" />
+            <om:Property Name="Signal" Value="True" />
+            <om:Element Type="PartDeclaration" OID="667f4ea1-fa93-4712-80b4-047dd003242d" ParentLink="MultipartMessageType_PartDeclaration" LowerBound="14.1" HigherBound="15.1">
+                <om:Property Name="ClassName" Value="Msft.Samples.BizTalk.Exception.Schemas.FaultMessage" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Body" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module BootCamp.Orchestration.Exception.Process
+{
+    public messagetype RequestApproved
+    {
+        body BootCamp.Orchestration.Exception.Schemas.Request Body;
+    };
+    internal messagetype RequestDeclined
+    {
+        body BootCamp.Orchestration.Exception.Schemas.RequestDenied Body;
+    };
+    public messagetype FaultMessageType
+    {
+        body Msft.Samples.BizTalk.Exception.Schemas.FaultMessage Body;
+    };
+    public porttype ReceiveReqType
+    {
+        oneway SubmitRequest
+        {
+            RequestApproved
+        };
+    };
+    internal porttype FaultPostType
+    {
+        oneway PostFaultMsg
+        {
+            FaultMessageType
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service EAIProcess
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements ReceiveReqType RequestPort;
+        [Microsoft.XLANGs.BaseTypes.DirectBinding()]
+        port uses FaultPostType FaultPost;
+        message RequestApproved ApprovedRequest;
+        message RequestDeclined DeniedRequest;
+        message FaultMessageType FaultMsg;
+        System.Int32 x;
+        System.Int32 y;
+        System.Int32 z;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("4183e8f8-9361-4319-a4f5-09e5f41656ed")]
+            activate receive (RequestPort.SubmitRequest, ApprovedRequest);
+            x = 0;
+            y = 1;
+            z = 0;
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("83127ce0-b6eb-41b5-a151-0dd80f8a1eeb")]
+            scope
+            {
+                body
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("f69f177a-b7fe-4332-9fec-437f64562250")]
+                    construct DeniedRequest
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("e6b25373-fd22-4fab-b6e5-d14ed112c58b")]
+                        transform (DeniedRequest.Body) = BootCamp.Orchestration.Exception.Schemas.MapToReqDenied (ApprovedRequest.Body);
+                    }
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("8e2041d4-7dca-4c04-a1ae-70d8e145eaf4")]
+                    // Generate a Divide By Zero Error
+                    x = y/z;
+                }
+                exceptions
+                {
+                    [Microsoft.XLANGs.BaseTypes.DesignerPosition("e280636b-1992-4206-ba53-04b9ec1fdf9c")]
+                    catch (System.Exception sysExc)
+                    {
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("7de7d650-8d15-4da1-a31d-a25dee88a251")]
+                        construct FaultMsg
+                        {
+                            [Microsoft.XLANGs.BaseTypes.DesignerPosition("0c38cf5f-a01a-4b57-b931-fcd1c6f6fe60")]
+                            // Create Fault Exception Message
+                            FaultMsg.Body = Msft.Samples.BizTalk.Exception.ExceptionMgmt.CreateFaultMessage();
+                            
+                            // Set Fault Message Properties
+                            FaultMsg.Body.Application = "Some Application";
+                            FaultMsg.Body.FailureCategory = "Sample";
+                            FaultMsg.Body.FaultCode = "new fault";
+                            FaultMsg.Body.FaultDescription = "Some Application Description";
+                            FaultMsg.Body.FaultSeverity = Msft.Samples.BizTalk.Exception.FaultSeverity.Severe;
+                            FaultMsg.Body.Scope = "Execution Scope";
+                            
+                            // Add each message to the Fault Message
+                            Msft.Samples.BizTalk.Exception.ExceptionMgmt.AddMessage(FaultMsg,ApprovedRequest);
+                            Msft.Samples.BizTalk.Exception.ExceptionMgmt.AddMessage(FaultMsg,DeniedRequest);
+                            Msft.Samples.BizTalk.Exception.ExceptionMgmt.SetException(FaultMsg,sysExc);
+                        }
+                        [Microsoft.XLANGs.BaseTypes.DesignerPosition("9fd50b3f-9c63-4b11-b21c-e6d22583cec4")]
+                        send (FaultPost.PostFaultMsg, FaultMsg);
+                    }
+                }
+            }
+        }
+    }
+}
+

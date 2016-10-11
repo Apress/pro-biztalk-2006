@@ -1,0 +1,1 @@
+At the time of printing a mistake was present in Exercise 10-2. To complete it successfully, please replace all occurrences of the folder "C:\PROBIZTALK\DeploymentSampleApplication\" to "C:\DeploymentSampleApplication\".

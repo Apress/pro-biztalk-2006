@@ -1,0 +1,5 @@
+bin\Debug\Streams.dll
+bin\Debug\Streams.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Streams.dll
+obj\Debug\Streams.pdb

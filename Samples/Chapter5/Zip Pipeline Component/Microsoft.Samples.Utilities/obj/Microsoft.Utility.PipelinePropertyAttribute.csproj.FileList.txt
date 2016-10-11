@@ -1,0 +1,5 @@
+bin\Debug\Microsoft.Utility.PipelinePropertyAttribute.dll
+bin\Debug\Microsoft.Utility.PipelinePropertyAttribute.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Microsoft.Utility.PipelinePropertyAttribute.dll
+obj\Debug\Microsoft.Utility.PipelinePropertyAttribute.pdb

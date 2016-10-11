@@ -1,0 +1,9 @@
+..\..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.Utility.PipelineGnuPG.dll
+..\..\..\Program Files\Microsoft BizTalk Server 2004\Pipeline Components\Microsoft.Utility.PipelineGnuPG.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Microsoft.Utility.PipelineGnuPG.GnuPGDecodeComponent.resources
+obj\Debug\Microsoft.Utility.PipelineGnuPG.GnuPGEncodeComponent.resources
+obj\Debug\Microsoft.Utility.PipelineGnuPG.PipelineGnuPg.resources
+obj\Debug\Microsoft.Utility.PipelineGnuPG.csproj.GenerateResource.Cache
+obj\Debug\Microsoft.Utility.PipelineGnuPG.dll
+obj\Debug\Microsoft.Utility.PipelineGnuPG.pdb

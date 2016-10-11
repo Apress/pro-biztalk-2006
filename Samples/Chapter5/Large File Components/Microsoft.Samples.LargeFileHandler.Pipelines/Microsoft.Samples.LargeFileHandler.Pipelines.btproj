@@ -1,0 +1,96 @@
+﻿<VisualStudioProject>
+    <BIZTALK
+        ProductVersion = "3.5.1602"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{BB92502F-2761-4D43-82E0-3AB5E2C7AFAD}"
+    >
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon
+                    AssemblyKeyName = ""
+                    AssemblyKeyFile = "C:\Documents and Settings\Administrator\My Documents\Visual Studio 2005\TR3KeyPair.snk"
+                    AssemblyDelaySign = "False"
+                    AssemblyTitle = ""
+                    AssemblyDescription = ""
+                    AssemblyDefaultAlias = ""
+                    AssemblyConfiguration = ""
+                    AssemblyTrademark = ""
+                    AssemblyProduct = ""
+                    AssemblyInformationalVersion = "1.0.0.0"
+                    AssemblyFileVersion = "1.0.0.0"
+                    AssemblyCopyright = ""
+                    AssemblyCompany = ""
+                    AssemblyVersion = "1.0.0.0"
+                    DefaultNamespace = "TR3.Pipelines"
+                    AssemblyName = "TR3.Pipelines"
+                />
+                <Config
+                    Name = "Development"
+                    ApplicationName = ""
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "True"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Development\"
+                />
+                <Config
+                    Name = "Deployment"
+                    ApplicationName = "TR3.Demo"
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "False"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Deployment\"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.DefaultPipelines"
+                    AssemblyName = "Microsoft.BizTalk.DefaultPipelines"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.GlobalPropertySchemas"
+                    AssemblyName = "Microsoft.BizTalk.GlobalPropertySchemas"
+                />
+                <Reference
+                    Name = "Microsoft.Samples.LargeFileHandler.PipelineComponents"
+                    Project = "{3FD17E7F-9CDB-451B-B0FE-99B02385123C}"
+                    Package = "{F184B08F-C81C-45F6-A57F-5ABD9991F28F}"
+                />
+                <Reference
+                    Name = "Microsoft.Samples.LargeFileHandler.Schemas"
+                    Project = "{CDFBC150-360E-4192-ACFF-0A5738AD0B76}"
+                    Package = "{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "Microsoft.Samples.LargeFileHandler.Pipelines.ReceivePipeline.btp"
+                    BuildAction = "Compile"
+                    Namespace = "Microsoft.Samples.LargeFileHandler.Pipelines"
+                    Type = "Microsoft_Samples_LargeFileHandler_Pipelines_ReceivePipeline"
+                />
+                <File
+                    RelPath = "Microsoft.Samples.LargeFileHandler.Pipelines.SendPipeline.btp"
+                    BuildAction = "Compile"
+                    Namespace = "Microsoft.Samples.LargeFileHandler.Pipelines"
+                    Type = "Microsoft_Samples_LargeFileHandler_Pipelines_SendPipeline"
+                />
+            </Include>
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

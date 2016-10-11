@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}") = "DeploymentSampleApplication", "DeploymentSampleApplication\DeploymentSampleApplication.btproj", "{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Deployment|.NET = Deployment|.NET
+		Development|.NET = Development|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}.Deployment|.NET.ActiveCfg = Deployment|.NET
+		{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}.Deployment|.NET.Build.0 = Deployment|.NET
+		{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}.Deployment|.NET.Deploy.0 = Deployment|.NET
+		{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}.Development|.NET.ActiveCfg = Development|.NET
+		{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}.Development|.NET.Build.0 = Development|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

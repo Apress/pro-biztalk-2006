@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://Microsoft.BizTalk.SuspendQueue.SuspendedMessage" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" targetNamespace="http://Microsoft.BizTalk.SuspendQueue.SuspendedMessage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SuspendedMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Context">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ReceivedFileName" type="xs:string" />
+              <xs:element name="InboundTransportLocation" type="xs:string" />
+              <xs:element name="InterchangeID" type="xs:string" />
+              <xs:element name="ReceivePortID" type="xs:string" />
+              <xs:element name="ReceivePortName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Message">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" maxOccurs="unbounded" name="MessagePart">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="MessagePartId" type="xs:string" />
+                    <xs:element name="Name" type="xs:string" />
+                    <xs:element name="Contents" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

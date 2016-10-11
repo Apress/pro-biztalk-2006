@@ -1,0 +1,92 @@
+﻿<VisualStudioProject>
+    <BIZTALK
+        ProductVersion = "3.5.1602"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{39D69167-842A-41CA-80DB-4B0F34C557BF}"
+    >
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon
+                    AssemblyKeyName = ""
+                    AssemblyKeyFile = "..\..\..\..\Keys\exc.snk"
+                    AssemblyDelaySign = "False"
+                    AssemblyTitle = ""
+                    AssemblyDescription = ""
+                    AssemblyDefaultAlias = ""
+                    AssemblyConfiguration = ""
+                    AssemblyTrademark = ""
+                    AssemblyProduct = ""
+                    AssemblyInformationalVersion = "1.0.0.0"
+                    AssemblyFileVersion = "1.0.0.0"
+                    AssemblyCopyright = ""
+                    AssemblyCompany = ""
+                    AssemblyVersion = "1.0.0.0"
+                    DefaultNamespace = "BootCamp.Orchestration.Exception.FaultHandler"
+                    AssemblyName = "BootCamp.Orchestration.Exception.FaultHandler"
+                />
+                <Config
+                    Name = "Development"
+                    ApplicationName = ""
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "True"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Development\"
+                />
+                <Config
+                    Name = "Deployment"
+                    ApplicationName = "BootCamp.Orchestration.Exception.Test"
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "False"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Deployment\"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.DefaultPipelines"
+                    AssemblyName = "Microsoft.BizTalk.DefaultPipelines"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.GlobalPropertySchemas"
+                    AssemblyName = "Microsoft.BizTalk.GlobalPropertySchemas"
+                />
+                <Reference
+                    Name = "BootCamp.Orchestration.Exception.Schemas"
+                    Project = "{CB4DADA9-72E4-41AD-A54D-566AB83375B4}"
+                    Package = "{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}"
+                />
+                <Reference
+                    Name = "Msft.Samples.BizTalk.Exception.Schemas"
+                    Project = "{1639B081-BAB9-473A-83DB-5639B0912D47}"
+                    Package = "{EF7E3281-CD33-11D4-8326-00C04FA0CE8D}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "EAIGenericHandler.odx"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "EAIProcessHandler.odx"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+

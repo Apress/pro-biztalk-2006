@@ -1,0 +1,5 @@
+bin\Debug\Microsoft.Samples.PipelineUtilities.dll
+bin\Debug\Microsoft.Samples.PipelineUtilities.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Microsoft.Samples.PipelineUtilities.dll
+obj\Debug\Microsoft.Samples.PipelineUtilities.pdb

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.4" productVersion="11.0.6565" PIVersion="1.0.0.0" href="file:///E:\Projects\Demos\FaultHandler\Msft.BizTalk.ExceptionMgmt\Templates\RepairReSubmitForm.xsn" name="urn:schemas-microsoft-com:office:infopath:RepairReSubmitForm:http--BootCamp-Orchestration-Exception-Schemas-Request" language="en-us" ?><?mso-application progid="InfoPath.Document"?><ns1:Request xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pr="http://schemas.microsoft.com/office/infopath/2003/sample/PurchaseRequest" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xmlns:ns1="http:/BootCamp.Orchestration.Exception.Schemas.Request" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:ns0="http://BootCamp.Orchestration.Exception.Schemas/System-Properties">
+	<Header>
+		<ReqID>444</ReqID>
+		<Date>2006-09-14</Date>
+	</Header>
+	<Item>
+		<Description>rerwe</Description>
+		<Quantity>5</Quantity>
+		<UnitPrice>1</UnitPrice>
+		<TotalPrice>5</TotalPrice>
+	</Item>
+</ns1:Request>

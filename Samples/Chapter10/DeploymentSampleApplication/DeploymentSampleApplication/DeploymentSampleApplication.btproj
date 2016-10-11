@@ -1,0 +1,96 @@
+<VisualStudioProject>
+    <BIZTALK
+        ProductVersion = "3.5.1602"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{48C3848A-19F0-4CBB-9A1D-45F914CC00D2}"
+    >
+        <Build>
+            <Settings>
+                <EditorCommon/>
+                <ProjectCommon
+                    AssemblyKeyName = ""
+                    AssemblyKeyFile = "..\..\..\..\PROBIZTALK.snk"
+                    AssemblyDelaySign = "False"
+                    AssemblyTitle = ""
+                    AssemblyDescription = ""
+                    AssemblyDefaultAlias = ""
+                    AssemblyConfiguration = ""
+                    AssemblyTrademark = ""
+                    AssemblyProduct = ""
+                    AssemblyInformationalVersion = "1.0.0.0"
+                    AssemblyFileVersion = "1.0.0.0"
+                    AssemblyCopyright = ""
+                    AssemblyCompany = ""
+                    AssemblyVersion = "1.0.0.0"
+                    DefaultNamespace = "DeploymentSampleApplication"
+                    AssemblyName = "DeploymentSampleApplication"
+                />
+                <Config
+                    Name = "Development"
+                    ApplicationName = "PROBIZTALK Deployment Sample Application Application"
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "True"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Development\"
+                />
+                <Config
+                    Name = "Deployment"
+                    ApplicationName = ""
+                    BpelCompliance = "True"
+                    GenerateDebuggingInformation = "False"
+                    EmbedTrackingInformation = "True"
+                    TreatWarningsAsErrors = "False"
+                    WarningLevel = "4"
+                    OutputPath = "bin\Deployment\"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.DefaultPipelines"
+                    AssemblyName = "Microsoft.BizTalk.DefaultPipelines"
+                />
+                <Reference
+                    Name = "Microsoft.BizTalk.GlobalPropertySchemas"
+                    AssemblyName = "Microsoft.BizTalk.GlobalPropertySchemas"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "GreetingsResponseSchema.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "DeploymentSampleApplication"
+                    Type = "GreetingsResponseSchema"
+                />
+                <File
+                    RelPath = "GreetingsSchema.xsd"
+                    BuildAction = "Compile"
+                    Namespace = "DeploymentSampleApplication"
+                    Type = "GreetingsSchema"
+                />
+                <File
+                    RelPath = "GreetingsToGreetingsResponseMap.btm"
+                    BuildAction = "Compile"
+                    Namespace = "DeploymentSampleApplication"
+                    Type = "GreetingsToGreetingsResponseMap"
+                />
+                <File
+                    RelPath = "ProcessGreetingsOrchestration.odx"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </BIZTALK>
+</VisualStudioProject>
+
